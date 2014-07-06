@@ -6,6 +6,8 @@ Serilog.Sinks.Loggy sink.
 
 ### Usage
 
+A simple console application is included for testing and as an example.
+
 <pre>
     Serilog.ILogger log = new LoggerConfiguration()
         .MinimumLevel.Verbose()
@@ -18,7 +20,7 @@ Serilog.Sinks.Loggy sink.
 * projectId:  Identifies project on the Keen.io account
 * writeKey: Write Key from the API keys for the project
 
-#### Event Collections
+### Event Collections
 
 Events are placed in collections named by the Serilog event level (Verbose, Debug, ... Fatal).
 
