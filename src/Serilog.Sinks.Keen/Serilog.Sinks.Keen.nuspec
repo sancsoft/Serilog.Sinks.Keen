@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>Serilog.Sinks.Keen</id>
+        <version>0.1.0</version>
+        <authors>Michael Terry</authors>
+        <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
+        <projectUrl>http://serilog.net</projectUrl>
+        <iconUrl>http://serilog.net/images/serilog-nuget.png</iconUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>Serilog event sink that writes to the Keen.io service.</description>
+        <language>en-US</language>
+        <tags>serilog logging keen keen.io error</tags>
+        <dependencies>
+            <dependency id="Serilog" />
+            <dependency id="KeenClient" version="0.2.1" />
+            <dependency id="Microsoft.Net.Http" version="2.2.22" />
+            <dependency id="Newtonsoft.Json" version="6.0.3" />
+            <dependency id="Microsoft.Bcl" version="1.1.9" />
+            <dependency id="Microsoft.Bcl.Build" version="1.0.14" />
+            <dependency id="Microsoft.Bcl.Async" version="1.0.168" />
+            <dependency id="PCLStorage" version="0.9.6" />
+        </dependencies>
+    </metadata>
+    <files>
+        <file src="bin\Release\Serilog.Sinks.Keen.dll" target="lib\net45\Serilog.Sinks.Keen.dll" />
+        <file src="bin\Release\Serilog.Sinks.Keen.xml" target="lib\net45\Serilog.Sinks.Keen.xml" />
+    </files>
+</package>
