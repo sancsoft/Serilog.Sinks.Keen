@@ -6,7 +6,9 @@ Serilog.Sinks.Loggy sink.
 
 ### Usage
 
-A simple console application is included for testing and as an example.
+A simple console application is included as an example and for testing.  Configuring the
+connection to Keen.io requires a valid **Project ID** and a **Write Key** from an active
+Keen.io account.
 
 <pre>
     Serilog.ILogger log = new LoggerConfiguration()
@@ -17,8 +19,7 @@ A simple console application is included for testing and as an example.
     log.Information("My cool message");
 </pre>
 
-* projectId:  Identifies project on the Keen.io account
-* writeKey: Write Key from the API keys for the project
+The console application pulls the settings from App.config. Update the file with your settings from Keen.io.
 
 ### Event Collections
 
